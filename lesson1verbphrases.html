@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lesson 20 - Verb Phrase </title>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+<style>
+body{ background: linear-gradient(45deg, white, #D1E4C4, white); 
+height: 800vh; }
+.buttons{
+  background-color:#D1E4C4;
+  color: black; 
+  box-shadow:5px 0px 7px black;
+  border-radius:10px;
+  cursor: pointer;
+  margin-right:15px;
+  margin-top:10px;
+  font-size:30px;
+  transition: background-color 1s;
+  transition: color 1s;
+  width:210px;
+  height: 80px;  
+  border-width: 2px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  
+}
+.buttons:hover{
+background-color:#F1F7ED;
+color:black;
+box-shadow: 5px 0px 7px black;
+}
+.buttons:active{
+opacity: 0.7;
+}
+
+.buttons1{
+  background-color:#D1E4C4;
+  color: black; 
+  box-shadow:5px 0px 7px black;
+  border-radius:10px;
+  cursor: pointer;
+  margin-right:5px;
+  font-size:23px;
+  transition: background-color 1s;
+  transition: color 1s;
+  width:175px;
+  height: 80px;  
+  border-width: 2px;
+  margin-bottom: 25px;
+  margin-left: 30px;
+  
+}
+.buttons1:hover{
+background-color:#F1F7ED;
+color:black;
+box-shadow: 5px 0px 7px black;
+}
+.buttons1:active{
+opacity: 0.7;
+}
+.tooltips{
+ position:relative;
+ display:block;
+ text-align:center;
+ font-size:70px;
+ font-weight:bold;
+ cursor:pointer;
+ 
+}
+.tooltips .tooltipstext{
+ visibility:hidden;
+ position:absolute;
+ z-index:1;
+ left:100px;
+ width:1100px;
+ top:125%;
+ background: #F1F7ED;
+ font-size:40px;
+ font-weight:normal;
+ padding: 5px;
+ border-radius: 6px;
+ box-shadow: 5px 0px 7px black;
+ text-align: center;
+ 
+}
+.tooltips:hover .tooltipstext{  visibility: visible;}
+
+
+.dropdown{ display: flex;}
+ .dropdown button{
+  background-color: #D1E4C4; color: black; padding: 10px 30px;
+  border:none; cursor:pointer; box-shadow: 5px 5px 7px black;
+  transition:0.05s; border-radius:4px;
+ }
+
+ .dropdown a{
+  display: flex; text-decoration: none; text-align: center; padding: 10px 23px; margin-top:10px; background-color: #D1E4C4;
+  color:black; box-shadow: 5px 5px 7px black; border-radius:4px; margin-left:5px;
+ }
+
+ .dropdown .content{
+   position: absolute; min-width:100px;
+  display:none;
+ }
+
+ .dropdown:hover .content{ 
+  display:flex;
+ }
+ .dropdown:hover button{
+  background-color: #F1F7ED; color:black;
+ }
+ .dropdown a:hover{
+  background-color: #F1F7ED; color:black;
+ }
+<nav><div class="dropdown">
+ <button>Lessons</button>
+ <div class="content">
+  <a href="lesson1new.html" target="_blank">Lesson 1</a>
+  <a href="lesson2new.html" target="_blank">Lesson 2</a>
+  <a href="lesson3new.html" target="_blank">Lesson 3</a>
+  <a href="lesson4new.html" target="_blank">Lesson 4</a>
+  <a href="lesson5new.html" target="_blank">Lesson 5</a>
+  <a href="lesson6new.html" target="_blank">Lesson 6</a>
+  <a href="lesson7new.html" target="_blank">Lesson 7</a>
+  <a href="lesson8new.html" target="_blank">Lesson 8</a>
+  <a href="lesson9new.html" target="_blank">Lesson 9</a>
+  <a href="lesson10new.html" target="_blank">Lesson 10</a>
+  <a href="lesson11new.html" target="_blank">Lesson 11</a>
+  <a href="lesson12new.html" target="_blank">Lesson 12</a>
+  <a href="lesson13new.html" target="_blank">Lesson 13</a>
+ </div>
+</div></nav>
+
+.p{ font-size: 30px; cursor:pointer;}
+.p1 { font-size: 40px; cursor:pointer;}
+
+.div1 {display: grid; grid-template-columns: 900px; justify-content: center; margin-top: 20px;}
+.div2 {display: grid; grid-template-columns: 1fr 1fr 1fr 1fr ; margin-bottom: 30px;}
+.div3 {display: grid; grid-template-columns: 1fr 1fr 1fr  ; margin-bottom: 30px;}
+.div4  {display: grid; grid-template-columns: 1fr 1fr 1fr 1fr ; margin-bottom: 30px;}
+.div5 {display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; margin-bottom: 30px;}
+.div6 {display: grid; grid-template-columns: 1fr 1fr;}
+.div7 {text-align: center; font-size: 40px;}
+.div8 {display: grid; grid-template-columns: 1fr 1fr 1fr;}
+.img {width:300px; height: 270px;}
+.img2 {width:300px; height: 270px; }
+
+@media screen and (max-width: 1000px){
+.p{ font-size: 25px;}
+.p1 {font-size: 25px;}
+
+.div1 {display: grid; grid-template-columns: 1fr;}
+.div2 {display: grid; grid-template-columns: 1fr;}
+.div3 {display: grid; grid-template-columns: 1fr;}
+.div4 {display: grid; grid-template-columns: 1fr;}
+.div5 {display: grid; grid-template-columns: 1fr;}
+.div6 {display: grid; grid-template-columns: 1fr;}
+.div7 {text-align: center; font-size: 30px;}
+.div8 {display: grid; grid-template-columns: 1fr ;}
+.wrapper { overflow-x: hidden; width: 100%; background: linear-gradient(45deg, white, #D1E4C4, white);}
+
+.img{width:150px; height: 135px;}
+.img2 {width:150px; height: 135px; }
+
+
+.tooltips{
+ position:relative;
+ display:block;
+ text-align:center;
+ font-size:30px;
+ font-weight:bold;
+ cursor:pointer;
+ 
+}
+.tooltips .tooltipstext{
+ visibility:hidden;
+ position:absolute;
+ z-index:1;
+ left:100px;
+ width:1100px;
+ top:125%;
+ background: #F1F7ED;
+ font-size:40px;
+ font-weight:normal;
+ padding: 5px;
+ border-radius: 6px;
+ box-shadow: 5px 0px 7px black;
+ 
+}
+.tooltips:hover .tooltipstext{  visibility: hidden;}
+
+.buttons{
+  background-color:#D1E4C4;
+  color: black; 
+  box-shadow:5px 0px 7px black;
+  border-radius:10px;
+  cursor: pointer;
+  margin-right:5px;
+  font-size:30px;
+  transition: background-color 1s;
+  transition: color 1s;
+  width:250px;
+  height: 80px;  
+  border-width: 2px;
+  margin-bottom: 25px;
+  margin-left: 5px;
+  
+}
+.buttons:hover{
+background-color:#F1F7ED;
+color:black;
+box-shadow: 5px 0px 7px black;
+}
+.buttons:active{
+opacity: 0.7;
+}
+
+}
+}
+
+
+</style>
+</head>
+<body>
+
+
+<div class="wrapper">
+<h1 class="tooltips">  Verb phrases <span class="tooltipstext"></span> </h1> 
+
+<div class="div1" style=" ">
+
+
+<div style="text-align: left; font-size: 30px; background-color:#D1E4C4; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey;">
+
+<div style="text-align: left; font-size: 30px;">
+<b>Basic parts</b><br>
+Verbs in English have four basic parts:<br><br>
+
+<div class="div2" style=" ">
+<div>
+<div style="text-align: center; font-size: 30px; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey; background-color:#F1F7ED; margin: 1px;"> <b>Base form</b> </div>
+<div style="text-align: center; font-size: 30px; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey; background-color:#F1F7ED; margin: 1px;">
+
+work <br> <hr>
+play <br><hr>
+listen<br>
+</div>
+</div>
+
+<div>
+<div style="text-align: center; font-size: 30px; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey; background-color:#F1F7ED; margin: 1px; "> <b>-ing </b></div>
+
+<div style="text-align: center; font-size: 30px; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey; background-color:#F1F7ED; margin: 1px;">
+
+working<br><hr>
+playing<br><hr>
+listening<br>
+</div>
+</div>
+
+<div>
+<div style="text-align: center; font-size: 30px; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey; background-color:#F1F7ED; margin: 1px; "><b> Past tense </b> </div>
+
+<div style="text-align: center; font-size: 30px; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey; background-color:#F1F7ED; margin: 1px;">
+
+worked<br><hr>
+played<br><hr>
+listened<br>
+</div>
+</div>
+
+<div>
+<div style="text-align: center; font-size: 30px; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey; background-color:#F1F7ED; margin: 1px; "><b> Past participle </b></div>
+
+<div style="text-align: center; font-size: 30px; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey; background-color:#F1F7ED; margin: 1px;">
+
+worked<br><hr>
+played<br><hr>
+listened<br>
+</div>
+</div>
+</div>
+ Most verbs are regular: they have a past tense and past participle with <br><b>– ed</b> worked &bull; played &bull; listened. But many of the most frequent verbs are irregular.
+</div>
+</div>
+</div>
+
+
+<div class="div1" style=" ">
+
+
+<div style="text-align: left; font-size: 30px; background-color:#D1E4C4; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey;">
+
+<div style="text-align: left; font-size: 30px;">
+<b>Verb phrases</b><br>
+Verb phrases in English have the following forms:<br><br><hr>
+<p style="text-align:center;">1. a <b>main verb</b></p>
+
+<div class="div3" style=" ">
+<div>
+<div style="text-align: center; font-size: 30px; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey; background-color:#F1F7ED; margin: 1px;"> 
+<b> Subject </b> </div>
+<div style="text-align: center; font-size: 30px; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey; background-color:#F1F7ED; margin: 1px;">
+
+We <br> <hr>
+I <br><hr>
+Everybody <br><hr>
+We <br>
+</div>
+</div>
+
+<div>
+<div style="text-align: center; font-size: 30px; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey; background-color:#F1F7ED; margin: 1px; "> 
+<b> Main Verb </b></div>
+
+<div style="text-align: center; font-size: 30px; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey; background-color:#F1F7ED; margin: 1px;">
+
+are <br><hr>
+like <br><hr>
+saw <br><hr>
+laughed. <br>
+</div>
+</div>
+
+<div>
+<div style="text-align: center; font-size: 30px; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey; background-color:#F1F7ED; margin: 1px; ">
+<b> 	Object or adverbial </b> </div>
+
+<div style="text-align: center; font-size: 30px; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey; background-color:#F1F7ED; margin: 1px;">
+
+here.<br><hr>
+it.<br><hr>
+the accident.<br><hr>
+-<br>
+</div>
+</div>
+
+</div>
+</div>
+The verb can be in the present tense <b>are &bull; like</b> or the past tense <b>saw &bull; laughed</b>.<br><br><br><hr>
+
+
+<p style="text-align:center;">2. the <b>auxiliary verb be</b> and a <b>main verb in the –ing form</b>:</p>
+<div class="div3" style=" ">
+<div>
+<div style="text-align: center; font-size: 30px; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey; background-color:#F1F7ED; margin: 1px;"> 
+<b> Subject </b> </div>
+<div style="text-align: center; font-size: 30px; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey; background-color:#F1F7ED; margin: 1px;">
+
+Everybody <br><hr>
+We <br> 
+
+</div>
+</div>
+
+<div>
+<div style="text-align: center; font-size: 30px; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey; background-color:#F1F7ED; margin: 1px; "> 
+<b> Auxiliary be </b></div>
+
+<div style="text-align: center; font-size: 30px; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey; background-color:#F1F7ED; margin: 1px;">
+
+is <br><hr>
+were <br>
+</div>
+</div>
+
+<div>
+<div style="text-align: center; font-size: 30px; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey; background-color:#F1F7ED; margin: 1px; ">
+<b> 	Object or adverbial </b> </div>
+
+<div style="text-align: center; font-size: 30px; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey; background-color:#F1F7ED; margin: 1px;">
+
+watching.<br><hr>
+laughing.<br>
+</div>
+</div>
+</div>
+A verb phrase with be and –ing expresses continuous aspect. A verb with am/is/are expresses <b>present continuous</b> and a verb with was/were expresses <b>past continuous.</b><br><br><br><hr>
+
+
+<p style="text-align:center;">3. the <b>auxiliary verb have</b> & a <b>main verb in the past participle form:</b></p>
+<div class="div4" style=" ">
+<div>
+<div style="text-align: center; font-size: 30px; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey; background-color:#F1F7ED; margin: 1px; padding-top:44px;"> 
+<b> Subject </b> </div>
+<div style="text-align: center; font-size: 30px; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey; background-color:#F1F7ED; margin: 1px;">
+They <br><hr>
+Everybody <br><hr>
+He <br> 
+
+</div>
+</div>
+
+<div>
+<div style="text-align: center; font-size: 30px; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey; background-color:#F1F7ED; margin: 1px; padding-top:44px; "> 
+<b> Auxiliary have </b></div>
+
+<div style="text-align: center; font-size: 30px; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey; background-color:#F1F7ED; margin: 1px;">
+
+have <br><hr>
+has <br><hr>
+had <br>
+</div>
+</div>
+
+<div>
+<div style="text-align: center; font-size: 30px; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey; background-color:#F1F7ED; margin: 1px; padding-top:44px;">
+<b> 	Past participle </b> </div>
+
+<div style="text-align: center; font-size: 30px; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey; background-color:#F1F7ED; margin: 1px;">
+
+enjoyed<br><hr>
+worked<br><hr>
+finished<br>
+
+</div>
+</div>
+
+<div>
+<div style="text-align: center; font-size: 30px; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey; background-color:#F1F7ED; margin: 1px; ">
+<b> 	Object or adverbial </b> </div>
+
+<div style="text-align: center; font-size: 30px; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey; background-color:#F1F7ED; margin: 1px;">
+
+themselves.<br><hr>
+hard.<br><hr>
+work.<br>
+
+</div>
+</div>
+</div>
+A verb phrase with have and the <b>past participle</b> expresses <b>perfect aspect</b>. A verb with have/has expresses <b>present perfect</b> and a verb with had expresses <b>past perfect</b>.<br><br><br><hr>
+
+
+<p style="text-align:center;">4. a modal verb <b>can &bull; could &bull; may &bull; might &bull; must &bull; shall &bull; should &bull; will &bull; would</b>  and a <b>main verb:</b></p>
+<div class="div3" style=" ">
+<div>
+<div style="text-align: center; font-size: 30px; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey; background-color:#F1F7ED; margin: 1px;"> 
+<b> Subject </b> </div>
+<div style="text-align: center; font-size: 30px; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey; background-color:#F1F7ED; margin: 1px;">
+
+They <br><hr>
+He <br> 
+
+</div>
+</div>
+
+<div>
+<div style="text-align: center; font-size: 30px; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey; background-color:#F1F7ED; margin: 1px; "> 
+<b> Modal verb </b></div>
+
+<div style="text-align: center; font-size: 30px; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey; background-color:#F1F7ED; margin: 1px;">
+
+will <br><hr>
+might <br>
+</div>
+</div>
+
+<div>
+<div style="text-align: center; font-size: 30px; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey; background-color:#F1F7ED; margin: 1px; ">
+<b> Main verb </b> </div>
+
+<div style="text-align: center; font-size: 30px; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey; background-color:#F1F7ED; margin: 1px;">
+
+come.<br><hr>
+come.<br>
+
+</div>
+</div>
+</div>
+<br><br><br><hr>
+
+
+<p style="text-align:center;">5. the <b>auxiliary verbs have and been and a main verb in the –ing form:</b></p>
+<div class="div4" style=" ">
+<div>
+<div style="text-align: center; font-size: 30px; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey; background-color:#F1F7ED; margin: 1px;"> 
+<b><br> Subject </b> <br></div>
+<div style="text-align: center; font-size: 30px; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey; background-color:#F1F7ED; margin: 1px;">
+
+Everybody <br><hr>
+He <br> 
+
+</div>
+</div>
+
+<div>
+<div style="text-align: center; font-size: 30px; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey; background-color:#F1F7ED; margin: 1px; "> 
+<b> Auxiliary have been </b></div>
+
+<div style="text-align: center; font-size: 30px; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey; background-color:#F1F7ED; margin: 1px;">
+
+has been <br><hr>
+had been <br>
+</div>
+</div>
+
+<div>
+<div style="text-align: center; font-size: 30px; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey; background-color:#F1F7ED; margin: 1px; ">
+<b><br> -ing form </b> </div>
+
+<div style="text-align: center; font-size: 30px; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey; background-color:#F1F7ED; margin: 1px;">
+
+working<br><hr>
+singing.<br>
+
+</div>
+</div>
+
+<div>
+<div style="text-align: center; font-size: 30px; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey; background-color:#F1F7ED; margin: 1px; ">
+<b><br> Adverbial </b> </div>
+
+<div style="text-align: center; font-size: 30px; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey; background-color:#F1F7ED; margin: 1px;">
+
+hard.<br><hr>
+-<br>
+
+</div>
+</div>
+</div>
+A verb phrase with have been and the -ing form expresses both perfect aspect and continuous aspect. A verb with have/has expresses present perfect continuous and a verb with had expresses past perfect continuous.<br><br><br><hr>
+
+<p style="text-align:center;">6. a modal verb and the auxiliaries be, have and have been:</p>
+<div class="div4" style=" ">
+<div>
+<div style="text-align: center; font-size: 30px; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey; background-color:#F1F7ED; margin: 1px;"> 
+<b> Subject </b> </div>
+<div style="text-align: center; font-size: 30px; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey; background-color:#F1F7ED; margin: 1px;">
+
+They <br><hr>
+He <br><hr>
+She <br> 
+
+</div>
+</div>
+
+<div>
+<div style="text-align: center; font-size: 30px; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey; background-color:#F1F7ED; margin: 1px; "> 
+<b> Modal </b></div>
+
+<div style="text-align: center; font-size: 30px; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey; background-color:#F1F7ED; margin: 1px;">
+
+will <br><hr>
+might <br><hr>
+must <br>
+</div>
+</div>
+
+<div>
+<div style="text-align: center; font-size: 30px; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey; background-color:#F1F7ED; margin: 1px; ">
+<b> Auxiliary </b> </div>
+
+<div style="text-align: center; font-size: 30px; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey; background-color:#F1F7ED; margin: 1px;">
+
+be<br><hr>
+have<br><hr>
+have been<br>
+
+</div>
+</div>
+
+<div>
+<div style="text-align: center; font-size: 30px; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey; background-color:#F1F7ED; margin: 1px; ">
+<b> Verb </b> </div>
+
+<div style="text-align: center; font-size: 30px; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey; background-color:#F1F7ED; margin: 1px;">
+
+listening.<br><hr>
+arrived.<br><hr>
+listening<br>
+
+</div>
+</div>
+</div>
+
+<br><br><br><hr>
+
+<p style="text-align:center;">7. the <b>auxiliary verb be</b> and a <b>main verb in the past participle form:</b></p>
+<div class="div4" style=" ">
+<div>
+<div style="text-align: center; font-size: 30px; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey; background-color:#F1F7ED; margin: 1px;"> 
+<b> Subject </b> </div>
+<div style="text-align: center; font-size: 30px; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey; background-color:#F1F7ED; margin: 1px;">
+
+<br>English <br><hr>
+The windows <br><hr>
+Lunch <br><hr>
+The work <br><hr>
+They <br><br> 
+
+</div>
+</div>
+
+<div>
+<div style="text-align: center; font-size: 30px; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey; background-color:#F1F7ED; margin: 1px; "> 
+<b> Auxiliary be </b></div>
+
+<div style="text-align: center; font-size: 30px; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey; background-color:#F1F7ED; margin: 1px;">
+
+<br>is <br><hr>
+have been <br><hr>
+was being <br><hr>
+will be <br><hr>
+might have been <br>
+</div>
+</div>
+
+<div>
+<div style="text-align: center; font-size: 30px; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey; background-color:#F1F7ED; margin: 1px; ">
+<b> Past participle </b> </div>
+
+<div style="text-align: center; font-size: 30px; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey; background-color:#F1F7ED; margin: 1px;">
+
+<br>spoken <br><hr>
+cleaned.<br><hr>
+served.<br><hr>
+finished<br><hr>
+invited<br><br>
+
+</div>
+</div>
+
+<div>
+<div style="text-align: center; font-size: 30px; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey; background-color:#F1F7ED; margin: 1px; ">
+<b> Verb </b> </div>
+
+<div style="text-align: center; font-size: 30px; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey; background-color:#F1F7ED; margin: 1px;">
+
+all over the world.<br><hr>
+-<br><hr>
+-<br><hr>
+soon.<br><hr>
+to the party<br><br>
+
+</div>
+</div>
+</div>
+A verb phrase with be and the past participle expresses passive voice.<br><br><br><hr>
+
+We can use the auxiliaries <b>do</b> and <b>did</b> with the infinitive for <b>emphasis</b>:<br><br>
+
+&bull; It was a wonderful party. I <b>did enjoy</b> it.<br>
+&bull; I <b>do agree</b> with you. I think you are absolutely right.<br><br>
+
+We can also use do for <b>polite invitations:</b><br><br>
+
+&bull; <b>Do come</b> and see us some time.<br>
+&bull; There will be lots of people there. <b>Do bring</b> your friends.
+
+
+</div>
+</div>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+  var sound1 = new Audio();
+  sound1.src = "spectacles.mp3";
+
+  var sound2 = new Audio();
+  sound2.src = "pyjamas.mp3";
+
+  var sound3 = new Audio();
+  sound3.src = "tights.mp3";
+
+  var sound4 = new Audio();
+  sound4.src = "trousers.mp3";
+
+  var sound5 = new Audio();
+  sound5.src = "pants.mp3";
+
+  var sound6 = new Audio();
+  sound6.src = "jeans.mp3";
+
+  var sound7 = new Audio();
+  sound7.src = "shorts.mp3";
+
+  var sound8 = new Audio();
+  sound8.src = "boxers.mp3";
+
+  var sound9 = new Audio();
+  sound9.src = "knickers.mp3";
+
+  var sound10 = new Audio();
+  sound10.src = "pliers.mp3";
+
+  var sound11 = new Audio();
+  sound11.src = "scissors.mp3";
+
+  var sound12 = new Audio();
+  sound12.src = "binoculars.mp3";
+ 
+  var sound13 = new Audio();
+  sound13.src = "pincers.mp3";
+
+  var sound14 = new Audio();
+  sound14.src = "flock.mp3";
+
+  var sound15 = new Audio();
+  sound15.src = "herd.mp3";
+
+  var sound16 = new Audio();
+  sound16.src = "team.mp3";
+
+  var sound17 = new Audio();
+  sound17.src = "anitemof.mp3";
+
+  var sound18 = new Audio();
+  sound18.src = "itemsof.mp3";
+
+ 
+  var sound19 = new Audio();
+  sound19.src = "both.mp3";
+
+  var sound20 = new Audio();
+  sound20.src = "either.mp3";
+
+  var sound21 = new Audio();
+  sound21.src = "neither.mp3";
+
+  var sound22 = new Audio();
+  sound22.src = "afew.mp3";
+
+  var sound23 = new Audio();
+  sound23.src = "fewer.mp3";
+
+  var sound24 = new Audio();
+  sound24.src = "acoupleof.mp3";
+
+  var sound25 = new Audio();
+  sound25.src = "hundredsof.mp3";
+
+  var sound26 = new Audio();
+  sound26.src = "thousandsof.mp3";
+
+  var sound27 = new Audio();
+  sound27.src = "notmuch.mp3";
+
+  var sound28 = new Audio();
+  sound28.src = "abitof.mp3";
+
+  var sound29 = new Audio();
+  sound29.src = "alittle.mp3";
+
+  var sound30 = new Audio();
+  sound30.src = "agreatdealof.mp3";
+
+  var sound31 = new Audio();
+  sound31.src = "agooddealof.mp3";
+ 
+
+  
+
+
+</script>
+</body>
+</html>
